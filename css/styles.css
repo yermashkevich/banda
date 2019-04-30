@@ -226,9 +226,11 @@ a {
     display: inline-block;
     width: 40px;
     line-height: 1;
-    padding-top: 3px; }
+    padding-top: 3px;
+    border-radius: 4px 0 0 4px; }
     .timer__number--right {
-      border-left: 2px dashed #ffde2f; }
+      border-left: 2px dashed #ffde2f;
+      border-radius: 0 4px 4px 0; }
     @media screen and (max-width: 620px) {
       .timer__number {
         font-size: 30px;
