@@ -1,24 +1,29 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "Proxima Regular";
-  src: url("../fonts/proximanova-regular.woff2") format("woff2"), url("../fonts/proximanova-regular.eot") format("embedded-opentype"), 
-    url("../fonts/proximanova-regular.ttf") format("truetype"); 
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.eot") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.ttf") format("truetype"); 
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Proxima Bold";
-  src: url("../fonts/proximanova-bold.eot") format("embedded-opentype"), url("../fonts/proximanova-bold.woff2") format("woff2"),
-    url("../fonts/proximanova-bold.ttf") format("truetype");
+  src: url("../fonts/ProximaNova-bold.eot") format("embedded-opentype"), url("../fonts/ProximaNova-bold.woff2") format("woff2"), url("../fonts/ProximaNova-bold.woff") format("woff"), url("../fonts/ProximaNova-bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Proxima SemiBold";
-  src: url("../fonts/proximanova-semibold.eot") format("embedded-opentype"), url("../fonts/proximanova-regular.woff2") format("woff2"),
-    url("../fonts/proximanova-semibold.ttf") format("truetype"); 
+  src: url("../fonts/ProximaNova-Semibold.eot") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Umnik Bold";
+  src: url("../fonts/Umnik-Bold.eot") format("embedded-opentype"), url("../fonts/Umnik-Bold.woff2") format("woff2"), url("../fonts/Umnik-Bold.woff") format("woff"), url("../fonts/Umnik-Bold.ttf") format("truetype"); 
   font-weight: normal;
   font-style: normal;
 }
