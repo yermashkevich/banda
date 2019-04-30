@@ -1,0 +1,198 @@
+@import "variables"
+
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	font-size: 16px
+	color: #000000
+	font-family: 'Proxima Regular', 'Times New Roman', sans-serif
+
+h2, h3
+	padding: 0
+	margin: 0
+
+p
+	margin: 0
+	padding: 0
+
+a
+	color: #000000
+	text-decoration: none
+	cursor: pointer
+
+.container
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	@media screen and (max-width: ($laptop)) 
+		max-width: 780px
+	@media screen and (max-width: ($tablet))
+		max-width: 100%
+		padding: 0 18px
+
+.action
+	&__title
+		font-size: 40px
+		line-height: 1.1
+		margin: 30px 0 25px
+		@media screen and (max-width: ($laptop))
+			text-align: center
+		@media screen and (max-width: ($small_tablet))
+			font-size: 30px
+		@media screen and (max-width: ($mobile))
+			font-size: 25px
+	&__banners
+		display: flex
+		margin: 0 -20px
+		justify-content: space-between
+		@media screen and (max-width: ($laptop))
+			flex-direction: column
+			align-items: center
+			margin: 0
+
+.banner
+	max-width: calc(50% - 40px)
+	width: 100%
+	margin: 0 20px
+	font-size: 0
+	position: relative
+	@media screen and (max-width: ($laptop))
+		max-width: 566px
+		margin: 20px 0
+	@media screen and (max-width: ($small_tablet))
+		max-width: 450px
+	@media screen and (max-width: ($mobile))
+		max-width: 280px
+	&--yellow
+		background: url("../img/bg.png") no-repeat
+		background-size: cover
+		display: flex
+		@media screen and (max-width: ($mobile))
+			flex-direction: column
+			align-items: center
+	&__link
+		display: inline-block
+		> img
+			width: 100%
+			height: auto
+	&__game
+		margin: 15px
+		@media screen and (max-width: ($small_tablet))
+			margin: 15px
+		> img
+			max-width: 193px
+			height: auto
+			@media screen and (max-width: ($small_tablet))
+				max-width: 140px
+			@media screen and (max-width: ($mobile))
+				max-width: 100%
+	&__gift
+		display: inline-block
+		position: absolute
+		top: 4px
+		left: 142px
+		@media screen and (max-width: ($small_tablet))
+			left: 100px
+			> img 
+				width: 90%
+		@media screen and (max-width: ($mobile))
+			left: 165px
+			> img
+				width: 110%
+	&__text
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		font-size: 16px
+		margin: 15px 10px 15px 25px
+		@media screen and (max-width: ($small_tablet))
+			margin-left: 30px
+		@media screen and (max-width: ($mobile))
+			margin: 0 15px 15px
+			text-align: center
+			align-items: center
+	&__title
+		font-size: 30px
+		font-weight: bold
+		line-height: 1.2
+		@media screen and (max-width: ($small_tablet))
+			font-size: 20px
+		@media screen and (max-width: ($mobile))
+			margin-bottom: 10px
+	&__subtitle
+		@media screen and (max-width: ($small_tablet))
+			line-height: 1
+	&__information
+		display: flex
+		align-items: center
+	&__price
+		margin-right: 25px		
+		&--new
+			font-size: 36px
+			font-weight: bold
+			color: $active_color
+			line-height: 1
+			@media screen and (max-width: ($small_tablet))
+				font-size: 22px
+		&--old
+			position: relative
+			display: inline-block
+			&::before
+				content: ""
+				height: 2px
+				width: 65px
+				background-color: $active-color
+				position: absolute
+				bottom: 10px
+				left: 0
+				transform: rotate(8deg)
+
+.timer
+	display: flex
+	@media screen and (max-width: ($mobile))
+		margin: 15px 0
+	&__block
+		margin-right: 22px
+	&__number
+		font-size: 55px
+		font-weight: bold
+		background-color: #ffffff
+		display: inline-block
+		width: 35px
+		line-height: 1
+		@media screen and (max-width: ($small_tablet))
+			font-size: 30px
+			width: 20px
+	&__text
+		margin-top: 5px
+		@media screen and (max-width: ($small_tablet))
+			margin-top: 0
+			font-size: 12px
+
+.btn 
+	padding: 12px 15px
+	background-color: $active_color
+	text-transform: uppercase
+	color: #ffffff
+	font-weight: bold
+	font-size: 18px
+	outline: none
+	border: none
+	@media screen and (max-width: ($small_tablet))
+		font-size: 16px
+		padding: 9px 12px
+	@media screen and (max-width: ($mobile))
+		padding: 5px 10px
+	&--absolute
+		position: absolute
+		bottom: 22px
+		right: 30px
+		@media screen and (max-width: ($small_tablet))
+			bottom: 17px
+			right: 25px
+		@media screen and (max-width: ($mobile))
+			bottom: 10px
+			right: 15px
