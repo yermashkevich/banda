@@ -1,0 +1,24 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Proxima Regular";
+  src: url("../fonts/proximanova-regular.woff2") format("woff2"), url("../fonts/proximanova-regular.eot") format("embedded-opentype"), 
+    url("../fonts/proximanova-regular.ttf") format("truetype"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Bold";
+  src: url("../fonts/proximanova-bold.eot") format("embedded-opentype"), url("../fonts/proximanova-bold.woff2") format("woff2"),
+    url("../fonts/proximanova-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima SemiBold";
+  src: url("../fonts/proximanova-semibold.eot") format("embedded-opentype"), url("../fonts/proximanova-regular.woff2") format("woff2"),
+    url("../fonts/proximanova-semibold.ttf") format("truetype"); 
+  font-weight: normal;
+  font-style: normal;
+}
